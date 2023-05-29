@@ -4,7 +4,7 @@ import Italy from '../../assets/Italy.png'
 import Egypt from '../../assets/Egypt.png'
 import Japon from '../../assets/Japon.png'
 import America from "../../assets/Flag.png"
-
+import { FiChevronRight } from "react-icons/fi"
 
 const DropdownCurrency = () => {
   return (
@@ -100,7 +100,77 @@ const DropdownContry = () => {
     </ul>
   )
 }
+
+const DropdownSimple = () => {
+  return(
+     <ul className="bg-black_color_900 w-[228px] transition-all duration-150 flex flex-col absolute z-40 top-9  group-hover:opacity-100">
+        <li className='px-4 py-2 w-full transition-all duration-150 hover:bg-black_color cursor-pointer'>
+          <a href="#" className=' text-white leading-6 text-text6 flex items-center gap-2'>
+            <span>Product v1</span>
+          </a>
+        </li>
+        <li className='px-4 py-2 w-full transition-all duration-150 hover:bg-black_color cursor-pointer'>
+          <a href="#" className=' text-white leading-6 text-text6 flex items-center justify-between gap-2'>
+            <span>Product v2</span>
+            <FiChevronRight />
+          </a>
+        </li>
+        <li className='px-4 py-2 w-full transition-all duration-150 hover:bg-black_color cursor-pointer'>
+          <a href="#" className=' text-white leading-6 text-text6 flex items-center justify-between gap-2'>  
+            <span>Product v3</span>
+            <FiChevronRight />
+          </a>
+        </li>
+        <li className='px-4 py-2 w-full transition-all duration-150 hover:bg-black_color cursor-pointer'>
+          <a href="#" className=' text-white leading-6 text-text6 flex items-center gap-2'>
+            <span>Product v4</span>
+          </a>
+        </li>
+        <li className='px-4 py-2 w-full transition-all duration-150 hover:bg-black_color cursor-pointer'>
+          <a href="#" className=' text-white leading-6 text-text6 flex items-center gap-2'>   
+            <span>Product v5</span>
+          </a>
+        </li>    
+    </ul>
+  )
+}
+
+const DropdownSearch = () => {
+  return(
+     <ul className="bg-black_color_900 w-[228px] transition-all duration-150 flex flex-col absolute z-40 top-9  group-hover:opacity-100">
+        <li className='px-4 py-2 w-full transition-all duration-150 hover:bg-black_color cursor-pointer'>
+          <a href="#" className=' text-white leading-6 text-text6 flex items-center gap-2'>
+            <span>Product v1</span>
+          </a>
+        </li>
+        <li className='px-4 py-2 w-full transition-all duration-150 hover:bg-black_color cursor-pointer'>
+          <a href="#" className=' text-white leading-6 text-text6 flex items-center justify-between gap-2'>
+            <span>Product v2</span>
+            <FiChevronRight />
+          </a>
+        </li>
+        <li className='px-4 py-2 w-full transition-all duration-150 hover:bg-black_color cursor-pointer'>
+          <a href="#" className=' text-white leading-6 text-text6 flex items-center justify-between gap-2'>  
+            <span>Product v3</span>
+            <FiChevronRight />
+          </a>
+        </li>
+        <li className='px-4 py-2 w-full transition-all duration-150 hover:bg-black_color cursor-pointer'>
+          <a href="#" className=' text-white leading-6 text-text6 flex items-center gap-2'>
+            <span>Product v4</span>
+          </a>
+        </li>
+        <li className='px-4 py-2 w-full transition-all duration-150 hover:bg-black_color cursor-pointer'>
+          <a href="#" className=' text-white leading-6 text-text6 flex items-center gap-2'>   
+            <span>Product v5</span>
+          </a>
+        </li>    
+    </ul>
+  )
+}
+
 export {
   DropdownCurrency,
-  DropdownLanguage
+  DropdownLanguage,
+  DropdownSimple
 } 
